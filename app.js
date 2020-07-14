@@ -2,11 +2,8 @@ const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const weatherAPI = require("./api/weatherData");
 const app = express();
-const path = require("path");
 
-// const publicStatic = path.join(__dirname, "public");
 
-// app.use(express.static(publicStatic));
 const PORT = 5000 || process.env.PORT;
 
 app.use(expressLayouts);
